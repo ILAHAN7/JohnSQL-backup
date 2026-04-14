@@ -1,0 +1,24 @@
+.rich-text-editor .ql-toolbar {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-color: hsl(var(--input));
+  background-color: transparent;
+}
+
+.rich-text-editor .ql-container {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  border-color: hsl(var(--input));
+  font-size: 0.875rem; /* text-sm */
+  min-height: 150px;
+}
+
+.rich-text-editor .ql-editor.ql-blank::before {
+  color: hsl(var(--muted-foreground));
+  font-style: normal;
+}
+
+/* Focus state simulation (Quill doesn't support focus-visible easily on the container, 
+   but we can try to target ql-container when it has ql-focus class if ReactQuill adds it, 
+   or just accept the default border for now. 
+*/

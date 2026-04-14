@@ -1,0 +1,25 @@
+# Common
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Frontend (front/)
+front/node_modules/
+front/dist/
+front/dist-ssr/
+front/*.local
+front/.env
+front/.env.*
+
+
+# Express Backend
+express-backend/.env
+express-backend/.env.*
+express-backend/node_modules/
+express-backend/uploads/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.local
